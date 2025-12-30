@@ -1,19 +1,15 @@
-console.log("Hello, World!nnnnn");
-console.log(`hello world`[10]);
-console.log("11111".length);
-let str ="This is a sample string for testing";
-console.log(str[str.length - 1]);
-  let LastName =`murphy`;
-  LastName = LastName + "Sama";
+let cash = 40
+let price = 50
+let difference = cash - price
 
-  console.log(LastName);
+if (cash > price) {
+    console.log(`you paid extra - here's ${difference} your change`)
+}
+else if (cash === price) {
+    console.log("you paid the exact amount, have a nice day")
+}
 
-//   F = C * 1.8 + 32
+else {
+    console.log(`you don't have enough cash - you still owe ${-difference} dollars`)   
 
-
-  let celsius = 10;
-  let fahrenheit = celsius * 1.8 + 32;
-
-  console.log(fahrenheit);
- let boo = false;
- console.log(boo);
+}
