@@ -65,8 +65,41 @@
 //     }
 
 // }
-const str = 'Frontend Simplified'
+// const str = 'Nathan T Murphy'
 
-for(let i = 0; i < str.length; i++){
-    console.log(str[i])
+// for(let i = 0; i < str.length; i++){
+//     console.log(str[i])
+// }
+
+
+// Function definition
+function welcomeToFES(firstName, MiddleInitial, lastName) {
+    console.log(`welcome to FES, ${firstName} ${MiddleInitial} ${lastName}`)
 }
+// call the function
+// welcomeToFES('nathan', 'T', 'murph')
+// welcomeToFES('tyrone', 'J', 'power')
+// welcomeToFES('murphy', 'E', `lee`)
+
+// function fn (){
+//     return 
+// console.log('this is a function')
+// }
+
+// fn()
+
+// function SumOfTwoNumbers(num1, num2){
+//     return num1 + num2
+// }
+
+// console.log(SumOfTwoNumbers(10, 20))  // a = argument
+
+
+// function convertCelsiusToFahrenheit(celsius){
+//     return (celsius * 1.8) + 32
+// }
+
+const convertCelsiusToFahrenheit = (celsius) => {
+    return celsius * 1.8 + 32
+}
+console.log(convertCelsiusToFahrenheit(30))
