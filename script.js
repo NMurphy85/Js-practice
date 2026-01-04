@@ -99,7 +99,82 @@ function welcomeToFES(firstName, MiddleInitial, lastName) {
 //     return (celsius * 1.8) + 32
 // }
 
-const convertCelsiusToFahrenheit = (celsius) => {
-    return celsius * 1.8 + 32
+// const convertCelsiusToFahrenheit = (celsius) => {
+//     return celsius * 1.8 + 32
+// }
+// console.log(convertCelsiusToFahrenheit(30))
+
+
+
+// let item1 = 20
+// let item2 = 30
+// let item3 = 40
+// let item4 = 50
+// let item5 = 100
+
+// let arr= [20,30,40,50,100]
+
+// //first element of array
+// console.log(arr[0])
+
+// //last element of array
+// console.log(arr[arr.length - 1])
+
+
+// //add element to end of array
+// arr.push(200)
+
+// console.log(arr)
+
+//  20, 30, 40, ||
+//  let newArr = arr.filter( element => element < 50)
+
+// console.log(newArr)
+
+// let grade1 = 'A+'
+// let grade2 = 'A'
+// let grade3 = 'B'
+// let grade4 = 'FAIL'
+
+let grades =['A+', 'A','FAIL']
+
+// let arr= ['A+', 'A',  'FAIL']
+// let gradeArr = arr.filter( (element) => element !== 'FAIL' )
+
+
+
+// console.log(gradeArr)
+// let goodGrades = []
+
+// for ( let i=0; i < grades.length; i++){
+
+// if(grades[i] !== 'FAIL'){
+//     goodGrades.push(grades[i])
+// }
+// }
+
+
+// console.log(goodGrades)
+
+// let arr = [1,4,9,16]
+
+//  let newArr = arr.map(element => element *2) 
+
+// console.log(newArr)
+
+let dollars = [1,3,5,10]
+
+// let numArr = dollars.map (num => num * 100)
+// console.log(numArr)
+
+
+let centDollars = []
+
+for ( let i=0; i <dollars.length; i++){
+
+centDollars.push(dollars[i] * 100)
 }
-console.log(convertCelsiusToFahrenheit(30))
+
+
+
+console.log(centDollars)
