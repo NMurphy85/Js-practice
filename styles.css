@@ -1,0 +1,8 @@
+*{
+    transition: all 0.3s ease;
+}
+
+.dark-theme{
+    background-color: rgb(184, 10, 10);
+    color: rgb(30, 14, 173);
+}
