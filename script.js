@@ -226,11 +226,7 @@ let dollars = [1, 3, 5, 10];
 
 // console.log(users);
 
-
 // First way to access an element
-
-
-
 
 // Second way to access an element
 // console.log(document.getElementById('title'))
@@ -239,8 +235,21 @@ let dollars = [1, 3, 5, 10];
 
 // document.querySelector('#title').style.color = '#beb315ff'
 
+// function toggleDark(){
+//    document.querySelector('body').classList.toggle('dark-theme')
 
-function toggleDark(){
-   document.querySelector('body').classList.toggle('dark-theme')
-    
-}
+// }
+
+//
+
+const emailRef = document.querySelector(".email");
+console.log(emailRef);
+
+fetch("https://jsonplaceholder.typicode.com/users/1")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+    emailRef.innerHTML = data.address.city;
+  });
