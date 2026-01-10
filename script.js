@@ -305,4 +305,124 @@ async function main() {
  
 }
 
-main();
+
+// function add(num1 , num2){
+//   return    num1 + num2
+
+// }
+
+// console.log(add(5,2))
+
+
+
+// function secondsIntoHours(hour){
+//    return  hour  * 60 * 60
+   
+// } 
+
+// console.log(secondsIntoHours(10))
+
+// function calcPerimeter(length , width){
+//   return 2 *(length + width)
+// }
+
+// console.log(calcPerimeter(2,9))
+
+// function calcTriangleArea(base,height){
+//   return  1 / 2 * base * height
+// }
+
+// console.log(calcTriangleArea(20,20)) 
+
+// function appendFrontend(string){
+//   return string + "Frontend"
+
+// }
+
+// console.log(appendFrontend('Apple'))
+
+// function sumGreaterThan100(num1,num2){
+
+// return num1 + num2 > 100 
+
+// }
+
+// console.log(sumGreaterThan100(100,-50))
+
+// function oppositeBoolean(boolean){
+
+// return !boolean 
+
+// }
+
+// console.log(oppositeBoolean(true))
+
+// function isNotZero(num){
+
+// return num !== 0 
+
+// }
+
+// console.log(isNotZero(0))
+
+// function calcRemainder(num1,num2){
+
+// return num1 % num2
+
+// }
+
+// console.log(calcRemainder(9,8))
+
+function isOdd(num){
+
+return num % 2 !== 0 
+
+}
+
+// console.log(isOdd(3))
+
+// function isOdd(num){
+
+// if (num % 2 === 0){
+//   return false
+// }
+
+// return true
+// }
+
+
+// console.log(isOdd(3))
+// function booleaninteger(num){
+
+// if (num % 2 === 0){
+//   return 1
+// }
+
+// return -1
+// }
+
+
+// console.log(booleaninteger(5))
+
+// function booleaninteger (num){
+//   return num % 2 === 0 ? 1 : -1
+// }
+
+
+
+
+// console.log(booleaninteger(2))
+
+// function isLoggedInAndSubscribed(loggedIn,subscribed){
+//   return loggedIn === 'loggedIn' && subscribed === 'subscribed' 
+
+// }
+
+// console.log(isLoggedInAndSubscribed('loggedIn','subscribed'))
+
+function isLoggedInAndSubscribed(loggedIn,subscribed){
+  return loggedIn === 'loggedIn' || subscribed === 'subscribed' 
+
+}
+
+console.log(isLoggedInAndSubscribed('loggedout','subscribed'))
