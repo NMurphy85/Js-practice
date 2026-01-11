@@ -465,7 +465,13 @@ function calcTime(seconds) {
 if (timerMinutes.toString().length === 1){
   timerMinutes = '0' + timerMinutes
 }
+//This seconf if statement was added to put a zero after the semicolon.//
+if (timerSeconds.toString().length === 1){
+  timerSeconds = '0' + timerSeconds
+}
+
+
   return  timerMinutes + ":" + timerSeconds;
 }
 
-console.log(calcTime(66));
+console.log(calcTime(300));
