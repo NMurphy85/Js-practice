@@ -295,16 +295,13 @@ function getVideo(subscriptionStatus) {
 async function main() {
   const status = await getSubscriptionStatus();
   statusRef.innerHTML = status;
-  try{
-    console.log(await getVideo(status))
+  try {
+    console.log(await getVideo(status));
+  } catch (e) {
+    console.log(e);
+    videoRef.innerHTML = e;
   }
-  catch (e){
-    console.log(e)
-    videoRef.innerHTML = e
-  }
- 
 }
-
 
 // function add(num1 , num2){
 //   return    num1 + num2
@@ -313,12 +310,10 @@ async function main() {
 
 // console.log(add(5,2))
 
-
-
 // function secondsIntoHours(hour){
 //    return  hour  * 60 * 60
-   
-// } 
+
+// }
 
 // console.log(secondsIntoHours(10))
 
@@ -332,7 +327,7 @@ async function main() {
 //   return  1 / 2 * base * height
 // }
 
-// console.log(calcTriangleArea(20,20)) 
+// console.log(calcTriangleArea(20,20))
 
 // function appendFrontend(string){
 //   return string + "Frontend"
@@ -343,7 +338,7 @@ async function main() {
 
 // function sumGreaterThan100(num1,num2){
 
-// return num1 + num2 > 100 
+// return num1 + num2 > 100
 
 // }
 
@@ -351,7 +346,7 @@ async function main() {
 
 // function oppositeBoolean(boolean){
 
-// return !boolean 
+// return !boolean
 
 // }
 
@@ -359,7 +354,7 @@ async function main() {
 
 // function isNotZero(num){
 
-// return num !== 0 
+// return num !== 0
 
 // }
 
@@ -373,10 +368,8 @@ async function main() {
 
 // console.log(calcRemainder(9,8))
 
-function isOdd(num){
-
-return num % 2 !== 0 
-
+function isOdd(num) {
+  return num % 2 !== 0;
 }
 
 // console.log(isOdd(3))
@@ -390,7 +383,6 @@ return num % 2 !== 0
 // return true
 // }
 
-
 // console.log(isOdd(3))
 // function booleaninteger(num){
 
@@ -401,28 +393,79 @@ return num % 2 !== 0
 // return -1
 // }
 
-
 // console.log(booleaninteger(5))
 
 // function booleaninteger (num){
 //   return num % 2 === 0 ? 1 : -1
 // }
 
-
-
-
 // console.log(booleaninteger(2))
 
 // function isLoggedInAndSubscribed(loggedIn,subscribed){
-//   return loggedIn === 'loggedIn' && subscribed === 'subscribed' 
+//   return loggedIn === 'loggedIn' && subscribed === 'subscribed'
 
 // }
 
 // console.log(isLoggedInAndSubscribed('loggedIn','subscribed'))
 
-function isLoggedInAndSubscribed(loggedIn,subscribed){
-  return loggedIn === 'loggedIn' || subscribed === 'subscribed' 
+// function isLoggedInAndSubscribed(loggedIn,subscribed){
+//   return loggedIn === 'loggedIn' || subscribed === 'subscribed'
 
+// }
+
+// console.log(isLoggedInAndSubscribed('loggedout','subscribed'))
+// function filterOutFalsy(ele1,ele2){
+// return !ele1 ? ele1 : ele2
+
+// }
+
+// console.log(filterOutFalsy(0,500))
+
+// function arrLength(arr){
+// return arr.length
+
+// }
+
+// console.log(arrLength([]))
+
+// function lastItem(last){
+// return last[last.length - 1]
+
+// }
+
+// console.log(lastItem([null,5,false]))
+
+// function arrSum(sum){
+//   let num = 0
+// for ( let i=0; i < sum.length  ; i++){
+//   //This is how you loop through every element in an array
+// num = num + sum[i]
+// }
+// return num
+
+// }
+
+// console.log(arrSum([2,2]))
+
+// function progressiveSum(sum){
+//   let num = 0
+// for ( let i=1; i <= sum  ; i++){
+// num = num + i
+// }
+//  return num
+
+// }
+
+// console.log(progressiveSum())
+
+function calcTime(seconds) {
+  let timerMinutes = Math.floor(seconds / 60);
+  let timerSeconds = seconds % 60;
+
+if (timerMinutes.toString().length === 1){
+  timerMinutes = '0' + timerMinutes
+}
+  return  timerMinutes + ":" + timerSeconds;
 }
 
-console.log(isLoggedInAndSubscribed('loggedout','subscribed'))
+console.log(calcTime(66));
