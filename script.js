@@ -458,20 +458,98 @@ function isOdd(num) {
 
 // console.log(progressiveSum())
 
-function calcTime(seconds) {
-  let timerMinutes = Math.floor(seconds / 60);
-  let timerSeconds = seconds % 60;
+// function calcTime(seconds) {
+//   let timerMinutes = Math.floor(seconds / 60);
+//   let timerSeconds = seconds % 60;
 
-if (timerMinutes.toString().length === 1){
-  timerMinutes = '0' + timerMinutes
+// if (timerMinutes.toString().length === 1){
+//   timerMinutes = '0' + timerMinutes
+// }
+// //This seconf if statement was added to put a zero after the semicolon.//
+// if (timerSeconds.toString().length === 1){
+//   timerSeconds = '0' + timerSeconds
+// }
+
+//   return  timerMinutes + ":" + timerSeconds;
+// }
+
+// console.log(calcTime(300));
+
+// function getMax(numbers){
+//   let max = numbers[0]
+//   for ( let i = 0; i < numbers.length  ; i++){
+
+// if (numbers[i] > max){
+//   max = numbers[i]
+// }
+
+// }
+// return  max
+
+// }
+
+// console.log(getMax([-300,-100,-200]));
+
+// function reverseString(str){
+//   //This is a decrementing for loop. you start from//
+//   let string = ''
+//   for ( let i = str.length - 1; i >= 0   ; i--){
+//  string += str[i]
+//   }
+
+//   return string
+//   }
+
+// console.log(reverseString('abc'));
+
+// function reverseString(str){
+
+//    return str.split('').reverse().join('')
+// }
+// console.log(reverseString(' I man am regal a german am i'));
+
+// function converttoZeros(num){
+
+//     return new Array(num.length).fill(0)
+// }
+// console.log(converttoZeros([0,0,'dddd']));
+
+// function converttoZeros(num) {
+//   return num.map((num) => 0);
+// }
+// console.log(converttoZeros([0, 0, "dddd", 0, 0, 0]));
+
+// function removeApples(arr) {
+
+//    return  arr.filter(ele => ele !== 'Apple')
+// }
+// console.log(removeApples(['Banana','Apple','Orange','Apple']));
+
+// function removeApples(arr) {
+//  let apples = []
+//   for (let i=0; i<arr.length; ++i){
+//     if(arr[i]!=='Apple'){
+//          apples.push(arr[i])
+//     }    
+//   }
+//   return apples
+
+// }
+// console.log(removeApples(['Banana','Apple','Orange','Apple']));
+
+// function filterOutFalsy(arr) {
+//  let falsy = []
+//   for (let i=0; i<arr.length; ++i){
+//     if(!!arr[i] === true){
+//          falsy.push(arr[i])
+//     }    
+//   }
+//   return falsy
+
+// }
+// console.log(filterOutFalsy(["",[],null,undefined,"0"]));
+
+function convertToBoolean(arr) {
+  return arr.map(arr =>!!arr)
 }
-//This seconf if statement was added to put a zero after the semicolon.//
-if (timerSeconds.toString().length === 1){
-  timerSeconds = '0' + timerSeconds
-}
-
-
-  return  timerMinutes + ":" + timerSeconds;
-}
-
-console.log(calcTime(300));
+console.log(convertToBoolean([500,0,"David","",[]]));
