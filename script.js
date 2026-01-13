@@ -530,7 +530,7 @@ function isOdd(num) {
 //   for (let i=0; i<arr.length; ++i){
 //     if(arr[i]!=='Apple'){
 //          apples.push(arr[i])
-//     }    
+//     }
 //   }
 //   return apples
 
@@ -542,14 +542,55 @@ function isOdd(num) {
 //   for (let i=0; i<arr.length; ++i){
 //     if(!!arr[i] === true){
 //          falsy.push(arr[i])
-//     }    
+//     }
 //   }
 //   return falsy
 
 // }
 // console.log(filterOutFalsy(["",[],null,undefined,"0"]));
 
-function convertToBoolean(arr) {
-  return arr.map(arr =>!!arr)
+// function convertToBoolean(arr) {
+//   return arr.map(arr =>!!arr)
+// }
+// console.log(convertToBoolean([500,0,"David","",[]]));
+
+// function showRating(rating) {
+// //Initialize an empty string
+// let stars = ""
+
+// // loop through the rounded down rating
+// for(let i = 0; i< Math.floor(rating); ++i){
+//   stars = stars + "*"
+//   if(i !== Math.floor(rating) - 1){
+//   stars = stars + " "
+//   } 
+// }
+
+
+// if( !Number.isInteger(rating)){
+//   stars = stars + " ."
+// }
+
+
+// return stars
+// }
+
+// console.log(showRating(4.5));
+
+
+// function sortLowToHigh(num) {
+//   return num.sort((a,b) => a-b)  
+  
+// }
+
+// console.log(sortLowToHigh([20,40,10,30,50,10,100000]))
+
+function sortHighToLow(num) {
+  return num.sort((a,b) => b.price - a.price)  
+  
 }
-console.log(convertToBoolean([500,0,"David","",[]]));
+
+console.log(sortHighToLow([{id: 1, price: 50},
+{id: 2, price: 30},
+{id: 3, price: 60},
+{id: 3, price: 10}]))
