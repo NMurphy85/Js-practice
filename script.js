@@ -585,12 +585,33 @@ function isOdd(num) {
 
 // console.log(sortLowToHigh([20,40,10,30,50,10,100000]))
 
-function sortHighToLow(num) {
-  return num.sort((a,b) => b.price - a.price)  
+// function sortHighToLow(num) {
+//   return num.sort((a,b) => b.price - a.price)  
   
+// }
+
+// console.log(sortHighToLow([{id: 1, price: 50},
+// {id: 2, price: 30},
+// {id: 3, price: 60},
+// {id: 3, price: 10}]))
+
+// async function postsByUser(uid) {
+//  console.log(uid)
+
+//   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//   const data = await response.json();
+//   statusRef.innerHTML = data.email
+//   console.log(data)
+// }
+
+// postsByUser(4);
+// Async goes before the function//
+async function postsByUser(userId){
+  //await goes in front of the promise you want to wait for//
+  const promise =  await fetch("https://jsonplaceholder.typicode.com/posts")
+const result = await promise.json()
+ const posts = result.filter(dog =>dog.userId === userId) 
+console.log(posts)
 }
 
-console.log(sortHighToLow([{id: 1, price: 50},
-{id: 2, price: 30},
-{id: 3, price: 60},
-{id: 3, price: 10}]))
+postsByUser(4)
